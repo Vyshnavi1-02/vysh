@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="style2.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="nav" id="nav">
+      <div>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png"
+          alt=""
+          class="nav__logo"
+        />
+      </div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#tvShows">TV Shows</a>
+        <a href="#movies">Movies</a>
+        <a href="#originals">Originals</a>
+        <a href="#">Recently Added</a>
+      </div>
+      <div>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
+          alt=""
+          class="nav__avatar"
+        />
+      </div>
+    </header>
+
+    <!-- header -->
+    <div class="banner">
+      <div class="banner__contents">
+        <h4>Netflix Originals</h4>
+        <div class="crop">
+          <img
+            src="https://www.freepnglogos.com/uploads/stranger-things-logo-png/stranger-things-movie-predator-logo-9.png"
+            class="crop"
+          />
+        </div>
+
+        <!-- <h1 class="banner__title">Money Heist</h1> -->
+
+        <div class="banner__description">
+          Matt Murdock, with his other senses superhumanly <br />
+          enhanced fights crime as a blind lawyer by day, <br />
+          and vigilane by night...
+        </div>
+        <div class="banner__buttons">
+          <button class="banner__button"><i class="bx bx-play"></i>Play</button>
+          <button class="banner__button-2">My List</button>
+        </div>
+      </div>
+      <div class="banner--fadeBottom"></div>
+    </div>
+
+    <!-- Netflix Orginals -->
+
+    <div class="row">
+      <h2>Trending Now</h2>
+      <div class="row__posters">
+        <img
+          src="https://m.media-amazon.com/images/M/MV5BOTdlODM0MTAtMzRiZi00MTQxLWE0MGUtNTNjOGZjNjAzN2E0XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg"
+          class="row__poster row__posterLarge"
+        />
+        <img
+          src="https://t1.gstatic.com/images?q=tbn:ANd9GcRZncWGecddiAkYuH89_6Ab-9pz4SiodoTDgHQ4ZP472Tc6YBWjlWXZ9escd_G_U1I1sPolXw"
+          alt=""
+          class="row__poster row__posterLarge"
+        />
+        <img
+          src="https://m.media-amazon.com/images/M/MV5BZjkwN2Q5Y2QtMmE2MC00NzlkLTg2NzQtYjVjYjVmNjE2ZTNiXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg"
+          alt=""
+          class="row__poster row__posterLarge"
+        />
+        <img
+          src="https://m.media-amazon.com/images/M/MV5BODAyYjIzZDEtMjFkMy00OGE2LWEzODItYmE4NjhkNzYxNmRjXkEyXkFqcGdeQXVyMTUzNTgzNzM0._V1_FMjpg_UX1000_.jpg"
+          alt=""
+          class="row__poster row__posterLarge"
+        />
+        <img
+          src="https://m.media-amazon.com/images/M/MV5BNGZjZDc3NjAtYjI1OC00NWUzLWIxOWItNzUyODc5NDIwMWRjXkEyXkFqcGdeQXVyNTQ4ODA2NzQ@._V1_.jpg"
+          alt=""
+          class="row__poster row__posterLarge"
+        />
+        <img
+          src="https://www.telugubulletin.com/wp-content/uploads/2023/05/Guntur-Karam.jpeg"
+          alt=""
+          class="row__poster row__posterLarge"
+        />
+        <img
+          src="https://m.media-amazon.com/images/M/MV5BYmYyYzZkZTEtOGNjYy00ZWUyLWFiYzYtYjViMzU1ZDk4ODhiXkEyXkFqcGdeQXVyNzI4NjYyMzk@._V1_.jpg"
+          alt=""
+          class="row__poster row__posterLarge"
+        />
+        <img
+          src="https://m.media-amazon.com/images/M/MV5BZDA5OTIyZmYtNTIyNS00ODgyLWEzNjMtZTg2NDk5ZjdjZGVmXkEyXkFqcGdeQXVyMzI4MzEwNQ@@._V1_.jpg"
+          alt=""
+          class="row__poster row__posterLarge"
+        />
+        <img
+          src="https://m.media-amazon.com/images/M/MV5BMDRjYWI5NTMtZTYzZC00NTg4LWI3NjMtNmI3MTdhMWQ5MGJlXkEyXkFqcGdeQXVyNTg4MDc4Mg@@._V1_.jpg"
+          class="row__poster row__posterLarge"
+        />
+        <img
+          src="https://m.media-amazon.com/images/M/MV5BYWYxMjBlZjEtY2ZkYS00OWE1LWEzNTAtNDlkZWE5NzI1NDE1XkEyXkFqcGdeQXVyMTA5NzIyMDY5._V1_.jpg"
+          alt=""
+          class="row__poster row__posterLarge"
+        />
+        <img
+          src="https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/1546361465343-5TGSV4MPVD624974E4AQ/netflix-announces-stranger-things-season-3-premiere-date-in-new-promo-video-and-poster1"
+          alt=""
+          class="row__poster row__posterLarge"
+        />
+        <img
+          src="https://m.media-amazon.com/images/M/MV5BODFmZTA0MzQtYjdjZS00ZWIxLTkzYTAtYWYzNzAyNzc0NzFlXkEyXkFqcGdeQXVyMTU2MTAxNTI2._V1_.jpg"
+          alt=""
+          class="row__poster row__posterLarge"
+        />
+        <img
+          src="https://m.media-amazon.com/images/M/MV5BMGViZWEwOGItMGZlMC00YzE1LTk5ZWItMGYxYjhhMjBmNDMwXkEyXkFqcGdeQXVyNDg4NjY5OTQ@._V1_.jpg"
+          alt=""
+          class="row__poster row__posterLarge"
+        />
+        <img
+          src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/3342e6896d26b151eccb4aecdce7869da25bbf64a17858d486f90c5f8b91d187._RI_TTW_.jpg"
+          alt=""
+          class="row__poster row__posterLarge"
+        />
+        <img
+          src="https://m.media-amazon.com/images/M/MV5BMWQ1NzViMTQtMjVhNy00YzA0LTg2MzYtZjUyOWNiNDI2MzhlXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_FMjpg_UX1000_.jpg"
+          alt=""
+          class="row__poster row__posterLarge"
+        />
+        <img
+          src="https://m.media-amazon.com/images/M/MV5BNTZlNjRiOGYtZjVlYy00Y2Y2LThjNmItNmVkY2U0ZjVjOGU4XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg"
+          alt=""
+          class="row__poster row__posterLarge"
+        />
+      </div>
+    </div>
+
+    <section class="main-container">
+      <div class="location" id="home">
+        <h1 id="home">Popular on Netflix</h1>
+        <div class="box">
+          <a href=""
+            ><img
+              src="https://www.comingsoon.net/wp-content/uploads/sites/3/2023/10/Ballerina.jpg?resize=1200,630"
+              class="row__poster row__posterLarge"
+          /></a>
+          <a href=""
+            ><img
+              src="https://thekitsunetwork.net/wp-content/uploads/2023/07/ZOM_BANNER-1.jpg"
+              class="row__poster row__posterLarge"
+          /></a>
+          <a href=""
+            ><img
+              src="https://i.ytimg.com/vi/E3D_s5f7fFc/maxresdefault.jpg"
+              class="row__poster row__posterLarge"
+          /></a>
+          <a href=""
+            ><img
+              src="https://asset-2.tstatic.net/tribunnewswiki/foto/bank/images/1922-2.jpg"
+              class="row__poster row__posterLarge"
+          /></a>
+          <a href=""
+            ><img
+              src="https://www.gbhbl.com/wp-content/uploads/2018/03/Veronica-Pic-1.jpg"
+              class="row__poster row__posterLarge"
+          /></a>
+          <a href=""
+            ><img
+              src="https://cinematichive.files.wordpress.com/2023/12/rebel-moon_netflix_subpar_viewership_zack-snyder_a-child-of-fire_.jpg?w=984"
+              class="row__poster row__posterLarge"
+          /></a>
+
+          <a href=""
+            ><img
+              src="https://moviesworld.blog/wp-content/uploads/2023/10/jhdvtrugcjhgfr.jpg"
+              class="row__poster row__posterLarge"
+          /></a>
+          <a href=""
+            ><img
+              src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p25556709_v_h8_ab.jpg"
+              class="row__poster row__posterLarge"
+          /></a>
+          <a href=""
+            ><img
+              src="https://m.media-amazon.com/images/S/pv-target-images/c331de36b874e7e9e7a2288da0c8d11b0131e22c61ab205cf81818c1309688dc.jpg"
+              class="row__poster row__posterLarge"
+          /></a>
+          <a href=""
+            ><img
+              src="https://www.heavenofhorror.com/wp-content/uploads/2023/02/we-have-a-ghost-netflix.jpg"
+              class="row__poster row__posterLarge"
+          /></a>
+          <a href=""
+            ><img
+              src="https://www.heavenofhorror.com/wp-content/uploads/2023/06/extraction-2-netflix-review.jpg"
+              class="row__poster row__posterLarge"
+          /></a>
+          <a href=""
+            ><img
+              src="https://c.ndtvimg.com/2023-12/ejah5gmo_salaar_625x300_20_December_23.jpg"
+              class="row__poster row__posterLarge"
+          /></a>
+        </div>
+      </div>
+
+      <!-- <div class="row">
+            <h2>Trending Now</h2>
+            <div class="row__posters">
+                <img src="images/small-movie1.jpg" alt="" class="row__poster">
+                <img src="images/small-movie2.jpg" alt="" class="row__poster"/>
+                <img src="images/small-movie3.jpg" alt="" class="row__poster"/>
+                <img src="images/small-movie4.jpg" alt="" class="row__poster"/>
+                <img src="images/small-movie5.jpg" alt="" class="row__poster"/>
+                <img src="images/small-movie6.jpg" alt="" class="row__poster"/>
+                <img src="images/small-movie7.jpg" alt="" class="row__poster"/>
+                <img src="images/small-movie8.jpg" alt="" class="row__poster">
+                <img src="images/small-movie1.jpg" alt="" class="row__poster">
+                <img src="images/small-movie2.jpg" alt="" class="row__poster"/>
+                <img src="images/small-movie3.jpg" alt="" class="row__poster"/>
+                <img src="images/small-movie4.jpg" alt="" class="row__poster"/>
+                <img src="images/small-movie5.jpg" alt="" class="row__poster"/>
+                <img src="images/small-movie6.jpg" alt="" class="row__poster"/>
+                <img src="images/small-movie7.jpg" alt="" class="row__poster"/>
+                <img src="images/small-movie8.jpg" alt="" class="row__poster">
+            </div>
+        </div> -->
+
+      <div class="row">
+        <h1 id="myList">Trending Now</h1>
+        <div class="row__posters">
+          <img
+            src="https://teamcomics.com.br/wp-content/uploads/2023/04/maxresdefault-5.jpg"
+            class="row__poster"
+          />
+          <img
+            src="https://dnm.nflximg.net/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABTaT7_KGzKsQhe4dnGmaNxkjVH5TZt9lRgl1ck1k2w0xlJ0Pz9hO0VBRhJIZlMUIBDXn4BDTM9FjrnmaWhkMNIcskeUY8wuz_XoOr3-LlCp5CRN0tiG4bEO8J0wr2KhQTJuI0A.jpg?r=d1e"
+            class="row__poster"
+          />
+          <img
+            src="https://dnm.nflximg.net/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABVbujK2tGVUvxVyxDEpii1h95hcc3u0rt8V7B_JNGz3NSB5Drvy7CDIiNk1M9rQRoVIx1LFgxxHqOt05fR1623EU8CUWvud5My_U.jpg?r=227"
+            class="row__poster"
+          />
+          <img
+            src="https://dnm.nflximg.net/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABRwNo6sQbNzJDL-4eqIct47VQWMSwVUB9CtTVbJ1ts8jqh0W0SuRizFV5c54ll-lPiUXngOYw727EMBVNsVMUEb9fces0aL5qOve.jpg?r=7a3"
+            class="row__poster"
+          />
+          <img
+            src="https://dnm.nflximg.net/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABSV8HtGUDWEXWOrafYZ9XB-dKyVOOMTSoOgw6EX2vV40i8zaOUhHeGYtfJyihd7GMpun84kW0XXCaLh8AZvObVZKX8mcOHS6Xafi.jpg?r=728"
+            class="row__poster"
+          />
+          <img
+            src="https://dnm.nflximg.net/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABdTrd80sNAnxBKpSGZAuusSPkWT87fXdU3pa5PPYKTeoof8q0b2fT3AQl1YCE-s9CixxoJLGBQ4umBLeA8uNPaZqOQoDSGftnIZfwdt5TkJZNi9sgmk82oFZmERUGQqNeQAecA.jpg?r=650"
+            class="row__poster"
+          />
+          <img
+            src="https://dnm.nflximg.net/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABfDnAnNz_F7i8jQlJVP5V46P9xD8weQC6LmGft_h1dPztnWY2YFs66f3kEwS0J4mJ6cmbfQplidcyrTn9YalqPqKz2kxmFJ8eD5t.jpg?r=2e4"
+            class="row__poster"
+          />
+          <img
+            src="https://dnm.nflximg.net/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABc2qh7DusA33px6HPXOjf_tmyx8V5EcWY7hka6Ai1BU5YIpzb6mYdNlVN2ayNQlDv-NES_iJ2j-zJwHiA5kMzjZvYyD8cL-PRLZ8xKMLLFUBH4Il3SCircZn0vmEqM3MV75PaA.jpg?r=ed2"
+            class="row__poster"
+          />
+          <img
+            src="https://i.ytimg.com/vi/ZtboYUGX5I4/maxresdefault.jpg"
+            class="row__poster"
+          />
+          <img
+            src="https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbS_HiX6e7hKUXztdlaMA3sQsuk24l8US65w7_1He_e1MPpd7885rvxbjPQT7kNfCWpgBCZH8TqhgP5OETCTdEpEs7HMH1utjI9fNX_GNxcBPhua_CCpkeo8tfhoQB4YDHD_ZA.jpg?r=af4"
+            class="row__poster"
+          />
+        </div>
+      </div>
+
+      <h1 id="tvShows">TV Shows</h1>
+      <div class="box">
+        <a href=""
+          ><img
+            src="https://www.comingsoon.net/wp-content/uploads/sites/3/2024/01/Untitled-design6-5.jpg"
+            alt=""
+        /></a>
+        <a href=""
+          ><img src="https://static.dw.com/image/62850747_605.jpg" alt=""
+        /></a>
+        <a href=""
+          ><img
+            src="https://res.heraldm.com/content/image/2022/02/03/20220203000246_0.jpg"
+            alt=""
+        /></a>
+        <a href=""
+          ><img
+            src="https://www.heavenofhorror.com/wp-content/uploads/2022/11/wednesday-netflix-review.jpg"
+            alt=""
+        /></a>
+        <a href=""
+          ><img
+            src="https://totlb.com/wp-content/uploads/2022/12/the-walking-dead-when-will-season-11-be-on-netflix-know-all-details-here.jpg"
+            alt=""
+        /></a>
+        <a href=""
+          ><img
+            src="https://imgeng.jagran.com/images/2023/nov/KaalaPaaniSeason21699887730730.jpg"
+            alt=""
+        /></a>
+        <a href=""
+          ><img
+            src="https://sportshub.cbsistatic.com/i/2022/12/01/f69643dd-f589-47f1-b78a-b6b6404dd4ab/netflix-you-penn-badgely.jpg"
+            alt=""
+        /></a>
+        <a href=""
+          ><img
+            src="https://www.comingsoon.net/wp-content/uploads/sites/3/2023/11/Untitled-design-9-1.png"
+            alt=""
+        /></a>
+        <a href=""
+          ><img
+            src="https://occ-0-3391-92.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABWBWjWQ0v5_oJx_CEGL3d3j8bzjosbslTBDxhmjCQXO-WhNokCmm-pIuw8lHhN9Td-UiEPWBOMYPqyM2VreBZAKDqY15yahqnLUgBGDd9GyDdoxgU9PTCaA7AxO4fWwIlumJWAliZ-Dnhy0Y0TXlELdazm2E1Wn4Kb_V1BknPPbKOcejWaQlhsijCrW5pbeGRbVV1sJE5dDCrML1Z1rC3lN6I3UpmDqxHfVTWBkah6w7NuWZ1oDScbuki_Pv43cick-ZVOZd-Frc7VUnjf5lkvQiNRrEL77QnLgocImJQ9HDOgTSt5p-BzQzAQ.jpg?r=40c"
+            alt=""
+        /></a>
+        <a href=""
+          ><img
+            src="https://staticg.sportskeeda.com/editor/2024/01/30822-17042217730037-1920.jpg?w=840"
+            alt=""
+        /></a>
+        <a href=""
+          ><img
+            src="https://www.beyoung.in/beyoungistan/wp-content/uploads/2024/01/Untitled-3-1.jpg"
+            alt=""
+        /></a>
+        <a href=""
+          ><img
+            src="https://phantom-marca.unidadeditorial.es/a9afb2c3eec5db6b5e8bb47ba4d73e9f/crop/0x0/1198x674/f/jpg/assets/multimedia/imagenes/2021/05/20/16215105656946.jpg"
+            alt=""
+        /></a>
+      </div>
+
+      <div class="row">
+        <h1 id="movies">Blockbuster Action & Adventure</h1>
+        <div class="row__posters">
+          <img
+            src="https://prasinasamarsahome.files.wordpress.com/2020/10/pic_1980191.jpg"
+            class="row__poster"
+          />
+          <img
+            src="https://cdn.vox-cdn.com/thumbor/4sGz-bB3sYfXeKU-Ra9i7WpoCE0=/0x0:1920x1078/1320x0/filters:focal(0x0:1920x1078):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/19533062/Screen_Shot_2019_12_13_at_12.45.25_PM.png"
+            class="row__poster"
+          />
+          <img
+            src="https://moviewarden.files.wordpress.com/2018/07/skyscraper-movie-poster.png"
+            class="row__poster"
+          />
+          <img
+            src="https://playblog.it/wp-content/uploads/2021/09/La-gente-sta-perdendo-la-testa-per-Kate-il-nuovo-film-dazione-su-Netflix.jpg"
+            class="row__poster"
+          />
+          <img
+            src="https://i.ytimg.com/vi/QP3sxps6k0s/maxresdefault.jpg"
+            class="row__poster"
+          />
+          <img
+            src="https://freakingeek.com/wp-content/uploads/2020/12/Ava-Netflix-Banniere-800x445.png"
+            class="row__poster"
+          />
+          <img
+            src="https://animeindia.in/wp-content/uploads/2020/07/Gemini-Man-movie-2019.jpg"
+            class="row__poster"
+          />
+          <img
+            src="https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABZJM3Edt4JT1CF9CyCyxr5orGF5vAhqKjxFgJTvCN8wByMCrvrJIkD-6OGPLszxqHkoleckcnQ71DCk-fdiaLK8PwjZEISJghA_x.jpg?r=9f3"
+            class="row__poster"
+          />
+          <img
+            src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t5.PNG?raw=true"
+            class="row__poster"
+          />
+          <img
+            src="https://m.media-amazon.com/images/S/pv-target-images/8ea2f1122a5c9a4c51baded71fbc9809727e93c34e96c68eca6542a78a261d41.jpg"
+            class="row__poster"
+          />
+        </div>
+      </div>
+
+      <h1 id="originals">Sci-fi show</h1>
+      <div class="box">
+        <a href=""
+          ><img
+            src="https://ntvb.tmsimg.com/assets/p13257200_b_h10_ad.jpg?w=1280&h=720"
+            alt=""
+        /></a>
+        <a href=""
+          ><img
+            src="https://staticg.sportskeeda.com/editor/2021/10/82517-16341355252666-1920.jpg"
+            alt=""
+        /></a>
+        <a href=""
+          ><img
+            src="https://ntvb.tmsimg.com/assets/p17285128_b_h8_al.jpg?w=1280&h=720"
+            alt=""
+        /></a>
+        <a href=""
+          ><img
+            src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2021/12/lost-in-space-s3-ending.jpg"
+            alt=""
+        /></a>
+        <a href=""
+          ><img
+            src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p11677721_b_h10_aa.jpg"
+            alt=""
+        /></a>
+        <a href=""
+          ><img
+            src="https://ntvb.tmsimg.com/assets/p15786287_b_h11_ab.jpg"
+            alt=""
+        /></a>
+
+        <a href=""
+          ><img
+            src="https://www.heavenofhorror.com/wp-content/uploads/2019/05/rim-of-the-world-netflix-review-sci-fi-1200x675.jpg"
+            alt=""
+        /></a>
+        <a href=""
+          ><img
+            src="https://i.ytimg.com/vi/4iftb1cM9DE/maxresdefault.jpg"
+            alt=""
+        /></a>
+        <a href=""
+          ><img
+            src="https://www.heavenofhorror.com/wp-content/uploads/2020/04/time-to-hunt-netflix-review.jpg"
+            alt=""
+        /></a>
+        <a href=""
+          ><img
+            src="https://metadata-static.plex.tv/7/gracenote/7308246bcdbda1cfc97703f827213447.jpg"
+            alt=""
+        /></a>
+        <a href=""
+          ><img
+            src="https://i0.wp.com/sequentialplanet.com/wp-content/uploads/2018/06/f44e15fa15b882c5bcc615a4b6efe766421c87f0-e1530339991252.jpg?fit=760%2C429&ssl=1"
+            alt=""
+        /></a>
+        <a href=""
+          ><img
+            src="https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABeGrJcaWH_XStoiH0CAyaZ4dyun9bzqBiJc0Jckxvg_FNu8OOyGnl21-FQnk1aV7l1FEBfyPY7fQNgxQ8aGPAYStg2W-AoUrZoNk.jpg?r=a52"
+            alt=""
+        /></a>
+      </div>
+    </section>
+
+
+    <section class="link">
+      <div class="logos">
+        <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-2x logo"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x logo"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-2x logo"></i></a>
+      </div>
+      <div class="sub-links">
+        <ul>
+          <li><a href="#">Audio and Subtitles</a></li>
+          <li><a href="#">Audio Description</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Gift Cards</a></li>
+          <li><a href="#">Media Center</a></li>
+          <li><a href="#">Investor Relations</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Legal Notices</a></li>
+          <li><a href="#">Corporate Information</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </section>
+    <footer>
+      <p>&copy 1997-2024 Netflix, Inc.</p>
+      <p>Vyshnavi &copy 2024</p>
+    </footer>
+
+    <script>
+      const nav = document.getElementById("nav");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY >= 100) {
+          vys.classList.add("nav__black");
+        } else {
+          vys.classList.remove("nav__black");
+        }
+      });
+    </script>
+  </body>
+</html>nz
