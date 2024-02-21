@@ -1,0 +1,410 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #111;
+}
+
+.row {
+  color: white;
+  /* margin-left: 20px; */
+}
+.row h2 {
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+}
+.row__poster {
+  width: 100%;
+  object-fit: contain;
+  max-height: 100px;
+  margin-right: 10px;
+  transition: transform 450ms;
+}
+.row__posters {
+  display: flex;
+  gap: 10px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+  /* margin-left: 20px; */
+}
+.row__poster:hover {
+  transform: scale(1.3);
+}
+.row__posters::-webkit-scrollbar {
+  display: none;
+}
+.row__posterLarge {
+  max-height: 250px;
+}
+.row__posterLarge:hover {
+  transform: scale(1.11);
+}
+
+.banner {
+  background-image: url(https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/1546361465343-5TGSV4MPVD624974E4AQ/netflix-announces-stranger-things-season-3-premiere-date-in-new-promo-video-and-poster1);
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  object-fit: contain;
+  height: 448px;
+}
+.banner__contents {
+  background: linear-gradient(
+    250deg,
+    transparent,
+    rgba(17, 17, 17, 0.484),
+    #111
+  );
+  /* margin-left: 70px; */
+  /* padding-top: 120px; */
+  padding: 120px 0 50px 70px;
+}
+.banner__contents h4 {
+  padding-left: 10px;
+}
+.crop {
+  /* background-color: #009dff; */
+  width: 350px;
+  height: 180px;
+  margin-left: -20px;
+  margin-top: -10px;
+  margin-bottom: -30px;
+}
+.crop img:hover {
+  transition: 0.3s ease-in-out;
+  filter: brightness(0) invert(1);
+}
+/* .crop img{
+    object-fit: cover;
+} */
+
+/* .banner__contents img{
+    width: 20%;
+    height: 130px;
+} */
+/* .st_svg{
+    width: 100%;
+    height: 70px;
+} */
+.banner__title {
+  font-size: 3rem;
+  font-weight: 800;
+  padding-bottom: 0.3rem;
+}
+.banner__description {
+  width: 45rem;
+  line-height: 1.7;
+  font-size: 0.8rem;
+  max-width: 360px;
+  height: 90px;
+}
+.banner__buttons {
+  display: flex;
+  gap: 20px;
+}
+.banner__buttons i {
+  font-size: 15px;
+  color: #000;
+}
+.banner__button {
+  cursor: pointer;
+  color: #000000;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #edeff8;
+  transition: all 0.3s;
+}
+
+.banner__button-2 {
+  cursor: pointer;
+  color: #fff;
+  border-radius: 3px;
+  border: 1px solid #fff;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: transparent;
+  transition: all 0.3s;
+}
+.banner__button:hover {
+  color: #ffffff;
+  background-color: #ff0000;
+}
+.banner__button-2:hover {
+  color: #000;
+  background-color: #e6e6e6;
+}
+.banner--fadeBottom {
+  margin-top: -100px;
+  height: 100px;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(17, 17, 17, 0.484),
+    #111
+  );
+}
+
+.nav__logo {
+  margin-left: 20px;
+  width: 100px;
+  object-fit: contain;
+  transition: 0.3s;
+}
+.nav__logo:hover {
+  filter: drop-shadow(0px 0px 14px rgba(255, 72, 72, 0.8));
+  /* box-shadow: 0 0 50px #ff1010; */
+}
+h1 {
+  color: #fff;
+  transition: 0.5s;
+}
+h1:hover {
+  color: #fff;
+  text-shadow: 0 0 50px #ff1010;
+}
+h2 {
+  color: #fff;
+  transition: 0.5s;
+}
+h2:hover {
+  color: #fff;
+  text-shadow: 0 0 50px #ff1010;
+}
+
+.nav__avatar {
+  width: 30px;
+  object-fit: contain;
+  transition: 0.5s;
+}
+.nav__avatar:hover {
+  box-shadow: 0 0 20px #009dff;
+}
+.nav {
+  position: fixed;
+  background: linear-gradient(to bottom, #111, transparent);
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  z-index: 1;
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  /* background: linear-gradient( to bottom, #111, transparent); */
+  background-color: transparent;
+  padding: 20px 20px 10px 20px;
+  /* border-radius: 10px;
+    margin-top: -10px; */
+}
+.nav a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  background-color: #ff0000;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+.nav a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.nav__black {
+  background-color: #111;
+}
+
+/* MAIN CONTIANER */
+img {
+  max-width: 100%;
+}
+
+.main-container h1 {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.main-container {
+  padding: 0 50px 50px 50px;
+  color: #fff;
+}
+
+.box {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(6, minmax(100px, 1fr));
+}
+
+.box a {
+  transition: transform 0.3s;
+}
+
+.box a:hover {
+  transition: transform 0.3s;
+  -ms-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
+}
+
+.box img {
+  border-radius: 2px;
+}
+
+.box-1 {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.box-1::-webkit-scrollbar {
+  display: none;
+}
+.box-1 a {
+  transition: transform 0.3s;
+}
+.box-1 a:hover {
+  transition: transform 0.3s;
+  -ms-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
+}
+
+/* LINKS */
+.sub-links {
+  /* margin: 0 0 0 200px; */
+  margin: 0 0 0 100px;
+}
+.sub-links ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.sub-links a {
+  color: #686868;
+  text-decoration: none;
+}
+
+.sub-links a:hover {
+  color: #686868;
+  text-decoration: underline;
+}
+.logos {
+  padding: 10px 0 20px 70px;
+}
+.logos a {
+  padding: 10px;
+  color: #686868;
+}
+
+/* FOOTER */
+footer {
+  padding: 20px;
+  text-align: center;
+  color: #686868;
+  margin: 30px;
+}
+
+@media (max-width: 600px) {
+  .nav-links {
+    display: none;
+  }
+  .banner {
+    background-image: url(https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/1546361465343-5TGSV4MPVD624974E4AQ/netflix-announces-stranger-things-season-3-premiere-date-in-new-promo-video-and-poster1);
+    height: 350px;
+  }
+  .banner__contents {
+    background: linear-gradient(
+      250deg,
+      transparent,
+      rgba(0, 0, 0, 0),
+      #11111100
+    );
+    padding: 130px 0 50px 0;
+  }
+  .banner__contents h4 {
+    padding-left: 0px;
+    text-align: center;
+  }
+  .banner__description {
+    /* width: 250px; */
+    display: none;
+  }
+  .crop {
+    text-align: center;
+    width: 300px;
+    height: 170px;
+    margin-left: 18px;
+    margin-bottom: -50px;
+  }
+  .banner__buttons {
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .row h2 {
+    font-size: 23px;
+    padding-bottom: 0px;
+  }
+  .row__poster {
+    width: 100%;
+    object-fit: cover;
+    max-height: 200px;
+    margin-right: 0px;
+    transition: transform 450ms;
+  }
+  .row__posters {
+    gap: 10px;
+    padding: 20px 0 20px 20px;
+  }
+
+  img {
+    /* max-width: 200px; */
+  }
+  .main-container {
+    padding: 0 50px 0 20px;
+  }
+  .box {
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, minmax(160px, 1fr));
+  }
+  .row h1 {
+    font-size: 23px;
+    padding-bottom: 0px;
+  }
+
+  .sub-links {
+    /* margin: 0 0 0 200px; */
+    margin: 0 0 0 2px;
+  }
+  .logos {
+    padding: 0px 0 20px 0px;
+  }
+  .logos a {
+    padding: 0px;
+  }
+  footer {
+    padding: 0px;
+    margin: 0px;
+  }
+}
